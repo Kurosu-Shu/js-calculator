@@ -15,37 +15,46 @@
 
     <section>
         <div class="container">
+            <!-- result display start -->
             <div class="display">
                 <h1 class="text">
-                    12422
-                    <span>*</span>
-                    12
+                    <span id="numOne">0</span>
+                    <span id="operator">
+
+                    </span>
+                    <span id="numTwo"></span>
                 </h1>
                 <h3 class="answer">
                     <span>_</span>
-                    0
+                    <span id="result">0</span>
                 </h3>
             </div>
+            <!-- result display end -->
+
+            <!-- button start -->
             <div class="btn-group">
-                <button class="btn" value="7"> 7</button>
-                <button class="btn" value="8">8</button>
-                <button class="btn" value="9"> 9</button>
+                <button class="btn number-btn" value="7"> 7</button>
+                <button class="btn number-btn" value="8">8</button>
+                <button class="btn number-btn" value="9"> 9</button>
+
                 <button class="btn sign-btn" value="division">
                     <i class="fa-solid fa-divide"></i>
                 </button>
                 <button class="btn ac-btn" value="AC"> AC</button>
 
-                <button class="btn" value="4"> 4</button>
-                <button class="btn" value="5"> 5</button>
-                <button class="btn" value="6"> 6</button>
+                <button class="btn number-btn" value="4"> 4</button>
+                <button class="btn number-btn" value="5"> 5</button>
+                <button class="btn number-btn" value="6"> 6</button>
+
                 <button class="btn sign-btn" value="multiply">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <button class="btn sign-btn" value="parenthesis"> ( )</button>
+                <button class="btn parenthesis" value="parenthesis"> ( )</button>
 
-                <button class="btn" value="1"> 1</button>
-                <button class="btn" value="2"> 2</button>
-                <button class="btn" value="3"> 3</button>
+                <button class="btn number-btn" value="1"> 1</button>
+                <button class="btn number-btn" value="2"> 2</button>
+                <button class="btn number-btn" value="3"> 3</button>
+
                 <button class="btn sign-btn" value="subtraction">
                     <i class="fa-solid fa-minus"></i>
                 </button>
@@ -53,18 +62,21 @@
                     <i class="fa-solid fa-percent"></i>
                 </button>
 
-                <button class="btn" value="0"> 0</button>
-                <button class="btn" value="."> .</button>
-                <button class="btn" value="delete">
+                <button class="btn number-btn" value="0"> 0</button>
+                <button class="btn number-btn" value="."> .</button>
+
+                <button class="btn" id="deleteButton" value="delete">
                     <i class="fa-solid fa-delete-left"></i>
                 </button>
                 <button class="btn sign-btn" value="addition">
                     <i class="fa-solid fa-plus"></i>
                 </button>
-                <button class="btn eq-btn" value="equal">
+                <button class="btn eq-btn" id="equalButton" value="equal">
                     <i class="fa-solid fa-equals"></i>
                 </button>
             </div>
+            <!-- button end -->
+
         </div>
     </section>
     <script type="module" src="js/app.js">
