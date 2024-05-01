@@ -69,15 +69,19 @@ section {
     color: #d8dbee;
     font-size: larger;
     font-weight: 600;
+    transition: .5s;
 }
 
 .btn:hover {
     background-color: #d8dbee;
-    transition: .5s;
     color: #21222b;
 }
 
 .sign-btn {
+    background-color: #414759;
+}
+
+.parenthesis {
     background-color: #414759;
 }
 
